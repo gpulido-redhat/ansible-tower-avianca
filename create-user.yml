@@ -1,6 +1,8 @@
 ---
- - name: Create a login user
-     user:
+- name: Create a login user
+  hosts: all
+  tasks:
+    user:
       name: fideloper
       password: '???'
       groups: # Empty by default, here we give it some groups
